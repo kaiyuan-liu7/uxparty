@@ -1,204 +1,111 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#27343a" />
-    <meta name="description" content="蔚来、萤火虫与智元团队交流日：集合、交流会，以及三套午餐与看展路线。" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2327343a'/%3E%3Cpath d='M15 22h34M15 32h24M15 42h30' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
-    <title>NIO × firefly × AGIBOT 交流日</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header" id="top">
-      <nav class="topbar wrap" aria-label="页面导航">
-        <a class="wordmark" href="#top">NIO × firefly × AGIBOT</a>
-        <div class="nav-links">
-          <a href="#arrival">集合</a><a href="#meeting">交流</a><a href="#choose-museum">路线</a><a href="#lunch">午餐</a><a href="#exhibition">看展</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf7f0">
+  <meta name="description" content="转动一点运气，碰撞一些新想法。抽出下一位和 Dylan 1v1 讨论 Value in Action Upgrade 的同学。">
+  <meta property="og:title" content="欢乐VAU · 今天，谁和 Dylan 聊聊？">
+  <meta property="og:description" content="8 位同学，一场好运。转动轮盘，开启 Value in Action Upgrade。">
+  <meta property="og:type" content="website">
+  <title>欢乐VAU · 今天，谁和 Dylan 聊聊？</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="M12 2c1.2 6.2 3.8 8.8 10 10-6.2 1.2-8.8 3.8-10 10C10.8 15.8 8.2 13.2 2 12c6.2-1.2 8.8-3.8 10-10Z"/></symbol>
+    <symbol id="icon-redraw" viewBox="0 0 24 24"><path d="M20 8a8.4 8.4 0 1 0 .1 8M20 3v5h-5"/></symbol>
+    <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></symbol>
+    <symbol id="icon-volume" viewBox="0 0 24 24"><path d="m11 4-5 4H3v8h3l5 4V4ZM15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="icon-mute" viewBox="0 0 24 24"><path d="m11 4-5 4H3v8h3l5 4V4Zm5 5 6 6m0-6-6 6"/></symbol>
+    <symbol id="icon-people" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3H3Zm13-17a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 5v2h-3"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+    <symbol id="icon-ticket" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 8h6M9 12h6m-6 4h3"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="欢乐VAU 首页">
+      <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20" fill="#f0644b"/><g stroke="#fff7df" stroke-width="1.4"><path d="M22 22 16 5A18 18 0 0 1 35 10Z" fill="#ffd678"/><path d="m22 22 17-6a18 18 0 0 1-5 20Z" fill="#ffe8a0"/><path d="m22 22 6 17A18 18 0 0 1 9 34Z" fill="#ffd678"/><path d="M22 22 5 28A18 18 0 0 1 10 9Z" fill="#ffe8a0"/></g><circle cx="22" cy="22" r="4" fill="#fff8e8"/></svg>
+      <span>欢乐VAU</span>
+    </a>
+    <nav class="header-actions" aria-label="游戏设置">
+      <button class="sound-button" id="sound-button" type="button" aria-label="关闭音效" aria-pressed="true" title="关闭音效">
+        <svg class="icon"><use href="#icon-volume"/></svg><span class="sound-switch" aria-hidden="true"></span>
+      </button>
+      <span class="header-divider" aria-hidden="true"></span>
+      <button class="button button-share" id="share-button" type="button"><svg class="icon"><use href="#icon-share"/></svg>分享</button>
+    </nav>
+  </header>
+
+  <main class="main-shell">
+    <section class="intro" aria-labelledby="page-heading">
+      <span class="intro-spark intro-spark-left" aria-hidden="true"><svg><use href="#icon-sparkle"/></svg><i></i></span>
+      <h1 id="page-heading">今天，谁和 Dylan 聊聊？</h1>
+      <p>转动一点运气，碰撞一些新想法。</p>
+      <span class="intro-spark intro-spark-right" aria-hidden="true"><svg><use href="#icon-sparkle"/></svg><i></i></span>
+    </section>
+
+    <div class="playground">
+      <section class="wheel-stage" aria-label="八人幸运转盘">
+        <div class="wheel-decorations" aria-hidden="true"><span class="decoration star star-one">✦</span><span class="decoration star star-two">✦</span><span class="decoration star star-three">✦</span><span class="decoration line line-one"></span><span class="decoration line line-two"></span><span class="decoration dot dot-one"></span><span class="decoration dot dot-two"></span><span class="decoration ring ring-one"></span></div>
+        <div class="wheel-shell">
+          <svg class="wheel-pointer" viewBox="0 0 56 72" aria-hidden="true"><path d="M8 3h40c4 0 6 3 4 7L31 66c-1 3-5 3-6 0L4 10C2 6 4 3 8 3Z" fill="#ed5b46" stroke="#fffaf0" stroke-width="3"/><circle cx="28" cy="18" r="6" fill="#fffaf0"/></svg>
+          <div class="wheel-rotor" id="wheel-rotor"><svg id="wheel-svg" viewBox="0 0 600 600" role="img" aria-label="抽签轮盘：晨妍、林壹、以宁、思远、西帆、云舒、开源、雨杰"></svg></div>
+          <div class="wheel-frame" aria-hidden="true"></div>
+          <button class="wheel-hub" id="hub-button" type="button" aria-label="开始抽奖"><span class="hub-rays" aria-hidden="true"></span><span id="hub-text">抽一个</span><span class="hub-rays hub-rays-bottom" aria-hidden="true"></span></button>
         </div>
-      </nav>
-      <div class="masthead wrap">
-        <div>
-          <p class="kicker">TEAM EXCHANGE DAY · 10.10 周六</p>
-          <h1>NIO UX TEAM PARTY</h1>
-          <p class="lead">上午与智元、萤火虫团队交流，中午一起吃饭，下午逛美术馆。</p>
-        </div>
-        <dl class="overview">
-          <div><dt>集合</dt><dd>09:30–09:45</dd></div>
-          <div><dt>交流</dt><dd>10:00–12:00</dd></div>
-          <div><dt>结束</dt><dd>17:00</dd></div>
-        </dl>
+      </section>
+
+      <div class="side-panel">
+        <section class="result-ticket" id="result-ticket" data-status="idle" aria-labelledby="result-label">
+          <div class="ticket-heading"><span></span><p id="result-label">下一位幸运同学</p><span></span></div>
+          <div class="result-display" aria-live="polite" aria-atomic="true">
+            <span class="result-star result-star-left" aria-hidden="true">✦</span>
+            <h2 id="winner-name">会是谁呢？</h2>
+            <span class="result-star result-star-right" aria-hidden="true">✦</span>
+            <p class="result-subtitle" id="result-subtitle">和 Dylan 开启一场 1v1</p>
+            <p class="result-description">Value in Action Upgrade</p>
+          </div>
+          <div class="draw-actions">
+            <button class="button button-primary" id="spin-button" type="button"><svg class="icon"><use href="#icon-sparkle"/></svg><span>开始抽奖</span></button>
+            <button class="button button-secondary" id="reroll-button" type="button" disabled aria-describedby="reroll-help"><svg class="icon"><use href="#icon-redraw"/></svg><span>此轮重新抽取</span></button>
+          </div>
+          <p class="reroll-help" id="reroll-help">抽中过的同学，后续轮次自动跳过</p>
+        </section>
+
+        <section class="roster-panel" aria-labelledby="roster-heading">
+          <div class="section-heading"><h2 id="roster-heading"><svg class="icon"><use href="#icon-people"/></svg>参与名单</h2><span id="remaining-count">待抽 8 / 8</span></div>
+          <ul class="roster" id="roster"></ul>
+        </section>
       </div>
-    </header>
+    </div>
 
-    <main class="timeline wrap" aria-label="交流日日程时间轴">
-      <section class="timeline-row" id="arrival">
-        <div class="time-cell"><time>09:30</time><span>– 09:45</span></div>
-        <article class="section-card">
-          <header class="section-header"><div><span class="step">01 · 集合</span><h2>前往智元</h2></div><p>10:00 准时开始交流会</p></header>
-          <div class="two-column">
-            <div class="info-block">
-              <h3>智元创新（上海）科技股份有限公司 B 区</h3>
-              <p class="muted">上海市浦东新区康桥路环桥路 1001 号</p>
-              <dl class="detail-list">
-                <div><dt>自驾</dt><dd>有车的伙伴自行前往。</dd></div>
-                <div><dt>拼车</dt><dd>无车且离创新港较近的伙伴，在创新港集合后一同打车；途中可顺路接人。</dd></div>
-                <div><dt>时间</dt><dd>创新港到智元预计至少 1.5 小时，请留足时间。</dd></div>
-                <div><dt>可选</dt><dd>有 L2 驾照的伙伴可考虑租一辆 ES9 使用一天。</dd></div>
-              </dl>
-            </div>
-            <figure class="media-frame">
-              <img class="zoomable" tabindex="0" role="button" src="assets/route.jpg" alt="创新港前往智元的路线地图" data-caption="创新港 → 智元创新 B 区" />
-              <figcaption>创新港 → 智元创新 B 区</figcaption>
-            </figure>
-          </div>
-          <div class="section-notes" data-note-section="arrival">
-            <div class="notes-heading"><span>我的备注</span><small class="notes-status" aria-live="polite">支持跨设备保存</small></div>
-            <textarea class="section-note-input" rows="1" maxlength="5000" placeholder="记录集合、拼车或其他提醒…" aria-label="01 集合备注"></textarea>
-          </div>
-        </article>
-      </section>
+    <section class="history-panel" aria-labelledby="history-heading">
+      <div class="section-heading history-heading"><h2 id="history-heading"><svg class="icon"><use href="#icon-clock"/></svg>抽签记录</h2><button class="button button-reset" id="reset-button" type="button" disabled><svg class="icon"><use href="#icon-trash"/></svg>重置全部</button></div>
+      <p class="history-empty" id="history-empty"><svg class="icon"><use href="#icon-ticket"/></svg>还没有抽签记录，好运从第一次开始。</p>
+      <ol class="history-list" id="history-list" hidden></ol>
+    </section>
+    <footer class="page-footer"><span class="save-dot" aria-hidden="true"></span><span id="save-note">进度自动保存在当前浏览器</span><span class="footer-separator">·</span><span>Dylan 不参与抽签</span></footer>
+  </main>
 
-      <section class="timeline-row" id="meeting">
-        <div class="time-cell"><time>10:00</time><span>– 12:00</span></div>
-        <article class="section-card">
-          <header class="section-header">
-            <div><span class="step">02 · 交流会</span><h2>参观与团队分享</h2></div>
-            <div class="meeting-meta">
-              <p>共 2 小时</p>
-              <a class="event-detail-link" href="https://luma.com/xlvga8ug" target="_blank" rel="nofollow noopener noreferrer">查看活动详情 <span aria-hidden="true">↗</span></a>
-            </div>
-          </header>
-          <div class="two-column meeting-layout">
-            <div class="meeting-agenda" aria-label="交流会议程">
-              <div class="agenda-stage visit-stage">
-                <span class="stage-order">01</span>
-                <div class="stage-copy"><small>先</small><h3>参观智元</h3></div>
-                <strong>30 min</strong>
-              </div>
-              <div class="agenda-stage share-stage">
-                <span class="stage-order">02</span>
-                <div class="stage-copy"><small>然后</small><h3>三支团队依次分享</h3><p>每个团队 30 分钟</p></div>
-                <div class="team-share-grid">
-                  <div><b>智元</b><span>30 min</span></div>
-                  <div><b>蔚来</b><span>30 min</span></div>
-                  <div><b>萤火虫</b><span>30 min</span></div>
-                </div>
-              </div>
-            </div>
-            <figure class="media-frame poster-frame">
-              <img class="zoomable" tabindex="0" role="button" src="assets/exchange-day.jpg" alt="NIO、AGIBOT 与 firefly 设计交流日海报" data-caption="设计交流日海报" />
-            </figure>
-          </div>
-          <div class="section-notes" data-note-section="meeting">
-            <div class="notes-heading"><span>我的备注</span><small class="notes-status" aria-live="polite">支持跨设备保存</small></div>
-            <textarea class="section-note-input" rows="1" maxlength="5000" placeholder="记录参观、分享或活动提醒…" aria-label="02 交流会备注"></textarea>
-          </div>
-        </article>
-      </section>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-      <section class="timeline-row chooser-row" id="choose-museum">
-        <div class="time-cell"><time>12:20</time><span>先选目的地</span></div>
-        <article class="section-card chooser-card">
-          <header class="section-header"><div><span class="step">03 · 路线选择</span><h2>先选美术馆</h2></div><p>选好目的地，再查看附近的午餐方案。</p></header>
-          <div class="museum-jump-grid" aria-label="选择美术馆并跳转到详情">
-            <article class="route-card" data-route="a">
-              <a class="museum-jump" data-route="a" href="#museum-a" aria-current="false"><span class="route-letter">A</span><span><strong>浦东美术馆</strong><small>21:00 闭馆</small></span><b aria-hidden="true">↓</b></a>
-              <figure class="route-map"><img class="zoomable" tabindex="0" role="button" src="assets/route-museum-a.jpg" alt="智元前往浦东美术馆的驾车路线图" data-caption="智元 → 浦东美术馆 · 约 44 分钟" /><figcaption><span>智元 → 浦东美术馆</span><strong>约 44 分钟</strong></figcaption></figure>
-            </article>
-            <article class="route-card" data-route="c">
-              <a class="museum-jump" data-route="c" href="#museum-c" aria-current="false"><span class="route-letter">C</span><span><strong>上海油罐艺术中心</strong><small>18:00 闭馆</small></span><b aria-hidden="true">↓</b></a>
-              <figure class="route-map"><img class="zoomable" tabindex="0" role="button" src="assets/route-museum-c.jpg" alt="智元前往上海油罐艺术中心的驾车路线图" data-caption="智元 → 上海油罐艺术中心 · 约 43 分钟" /><figcaption><span>智元 → 上海油罐艺术中心</span><strong>约 43 分钟</strong></figcaption></figure>
-            </article>
-          </div>
-          <div class="section-notes" data-note-section="choose-museum">
-            <div class="notes-heading"><span>我的备注</span><small class="notes-status" aria-live="polite">支持跨设备保存</small></div>
-            <textarea class="section-note-input" rows="1" maxlength="5000" placeholder="记录想去的美术馆或路线信息…" aria-label="03 路线选择备注"></textarea>
-          </div>
-        </article>
-      </section>
-
-      <section class="timeline-row" id="lunch">
-        <div class="time-cell"><time>12:30</time><span>– 15:00</span></div>
-        <article class="section-card">
-          <header class="section-header"><div><span class="step">04 · 午餐</span><h2>三套餐厅方案</h2></div><p>13:30–15:00 · 人均预算 ¥300</p></header>
-          <p class="section-note">12:00–12:30 从智元出发；餐厅均可从对应美术馆步行抵达。</p>
-
-          <div class="plan-block route-option" data-route="a">
-            <div class="plan-heading"><button class="route-select" type="button" data-route="a" aria-label="选择 A 路线：浦东美术馆附近" aria-pressed="false">A</button><div><h3>浦东美术馆附近</h3><p>预计车程 45 分钟</p></div></div>
-            <div class="restaurant-grid">
-              <article class="choice-card"><img class="zoomable" tabindex="0" role="button" src="assets/restaurant-a1.jpg" alt="樾鲜台州菜餐厅与菜品拼图" data-caption="A1 樾鲜 · 台州菜" /><div><small>A1 · 台州菜</small><h4>樾鲜</h4><p>需提前预定</p></div></article>
-              <article class="choice-card"><img class="zoomable" tabindex="0" role="button" src="assets/restaurant-a2.jpg" alt="三号仓库餐厅与创意融合菜拼图" data-caption="A2 三号仓库 · 创意融合菜" /><div><small>A2 · 创意融合菜</small><h4>三号仓库</h4></div></article>
-              <article class="choice-card"><img class="zoomable" tabindex="0" role="button" src="assets/restaurant-a3.jpg" alt="DONQUIXOTE 堂吉诃德餐厅与菜品拼图" data-caption="A3 DONQUIXOTE 堂吉诃德 · 西班牙菜" /><div><small>A3 · 西班牙菜</small><h4>DONQUIXOTE 堂吉诃德</h4></div></article>
-            </div>
-          </div>
-
-          <div class="plan-block route-option" data-route="c">
-            <div class="plan-heading"><button class="route-select" type="button" data-route="c" aria-label="选择 C 路线：上海油罐艺术中心附近" aria-pressed="false">C</button><div><h3>上海油罐艺术中心附近</h3><p>预计车程 45 分钟</p></div></div>
-            <div class="restaurant-grid">
-              <article class="choice-card"><img class="zoomable" tabindex="0" role="button" src="assets/restaurant-c1.jpg" alt="POETS 泰狮餐厅与泰国菜拼图" data-caption="C1 POETS 泰狮 · 泰餐" /><div><small>C1 · 泰餐</small><h4>POETS 泰狮</h4><p>累计 7 届大众点评必吃榜</p></div></article>
-              <article class="choice-card"><img class="zoomable" tabindex="0" role="button" src="assets/restaurant-c2.jpg" alt="芙蓉霄餐厅与湘菜拼图" data-caption="C2 芙蓉霄 · 湘菜" /><div><small>C2 · 湘菜</small><h4>芙蓉霄</h4><p>Gate M 西岸梦中心</p></div></article>
-              <article class="choice-card"><img class="zoomable" tabindex="0" role="button" src="assets/restaurant-c3.jpg" alt="山石榴餐厅与贵州菜拼图" data-caption="C3 山石榴 · 贵州菜" /><div><small>C3 · 贵州菜</small><h4>山石榴</h4><p>Gate M 西岸梦中心</p></div></article>
-            </div>
-          </div>
-          <div class="section-notes" data-note-section="lunch">
-            <div class="notes-heading"><span>我的备注</span><small class="notes-status" aria-live="polite">支持跨设备保存</small></div>
-            <textarea class="section-note-input" rows="1" maxlength="5000" placeholder="记录餐厅选择、预订或集合提醒…" aria-label="04 午餐备注"></textarea>
-          </div>
-        </article>
-      </section>
-
-      <section class="timeline-row" id="exhibition">
-        <div class="time-cell"><time>15:30</time><span>– 17:00</span></div>
-        <article class="section-card">
-          <header class="section-header">
-            <div><span class="step">05 · 逛展</span><h2>三套美术馆方案</h2></div>
-            <div class="exhibition-meta"><p>选定午餐方案后，步行前往对应展馆</p><a class="return-link" href="#lunch">返回午餐方案 ↑</a></div>
-          </header>
-          <div class="museum-grid">
-            <article class="museum-card route-option" id="museum-a" data-route="a">
-              <div class="museum-heading"><button class="route-select" type="button" data-route="a" aria-label="选择 A 路线：浦东美术馆" aria-pressed="false">A</button><div><h3>浦东美术馆 <a class="venue-site-link" href="https://www.museumofartpd.org.cn/" target="_blank" rel="nofollow noopener noreferrer">官网 ↗</a></h3></div></div>
-              <div class="closing-time"><span>闭馆时间</span><strong>21:00</strong><small>20:00 停止入场</small></div>
-              <figure class="media-frame"><img class="zoomable" tabindex="0" role="button" src="assets/museum-a.jpg" alt="浦东美术馆展览海报拼图" data-caption="浦东美术馆当前展览" /><figcaption>当前展览</figcaption></figure>
-              <ul class="exhibition-list">
-                <li><strong>乔治·莫兰迪：独白</strong><p>本世纪全球最大莫兰迪回顾展，约 120 件作品，逾 120 件首次来华。</p></li>
-                <li><strong>la Galerie du 19M SHANGHAI（香奈儿呈现）</strong><p>呈现香奈儿旗下 11 家高级手工坊的精湛工艺，及中法当代艺术家群展。</p></li>
-                <li><strong>卡罗莱娜·凯塞多：鲸鱼的致敬</strong><p>浦美 34 米中央展厅，两条真实尺寸座头鲸悬浮装置，营造沉浸式海洋空间。</p></li>
-              </ul>
-            </article>
-            <article class="museum-card route-option" id="museum-c" data-route="c">
-              <div class="museum-heading"><button class="route-select" type="button" data-route="c" aria-label="选择 C 路线：上海油罐艺术中心" aria-pressed="false">C</button><div><h3>上海油罐艺术中心 <a class="venue-site-link" href="http://tankshanghai.com/zh/" target="_blank" rel="nofollow noopener noreferrer">官网 ↗</a></h3></div></div>
-              <div class="closing-time"><span>闭馆时间</span><strong>18:00</strong><small>17:30 停止入场</small></div>
-              <figure class="media-frame"><img class="zoomable" tabindex="0" role="button" src="assets/museum-c.jpg" alt="上海油罐艺术中心 TechDiumMory 展览海报" data-caption="上海油罐艺术中心 · TechDiumMory" /><figcaption>当前展览</figcaption></figure>
-              <ul class="exhibition-list">
-                <li><strong>TechDiumMory（祝金坤、张楠、张听）</strong><p>展览聚焦技术（Tech）、媒介（Medium）与记忆（Memory）如何共同塑造现实。三位艺术家通过图像、算法、数据与日常物件，讨论信息传播、社会记忆和个体经验如何在持续复制中被重组。</p></li>
-              </ul>
-            </article>
-          </div>
-          <div class="section-notes" data-note-section="exhibition">
-            <div class="notes-heading"><span>我的备注</span><small class="notes-status" aria-live="polite">支持跨设备保存</small></div>
-            <textarea class="section-note-input" rows="1" maxlength="5000" placeholder="记录想看的展览或入场提醒…" aria-label="05 逛展备注"></textarea>
-          </div>
-        </article>
-      </section>
-
-      <section class="timeline-row timeline-end" id="finish">
-        <div class="time-cell"><time>17:00</time><span>结束</span></div>
-        <article class="section-card finish-card">
-          <header class="section-header"><div><span class="step">06 · 解散</span><h2>自由解散</h2></div><p>方案和餐厅都欢迎继续补充，有更好的想法直接发到群里。</p></header>
-          <a class="back-top" href="#top">回到顶部 ↑</a>
-          <div class="section-notes" data-note-section="finish">
-            <div class="notes-heading"><span>我的备注</span><small class="notes-status" aria-live="polite">支持跨设备保存</small></div>
-            <textarea class="section-note-input" rows="1" maxlength="5000" placeholder="记录后续补充或收尾事项…" aria-label="06 解散备注"></textarea>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <dialog class="image-viewer" id="image-viewer" aria-label="图片全屏预览">
-      <button class="viewer-close" type="button" aria-label="关闭图片预览">关闭 ×</button>
-      <div class="viewer-content"><img id="viewer-image" src="" alt="" /><p id="viewer-caption"></p></div>
-    </dialog>
-    <script src="app.js"></script>
-  </body>
+  <dialog id="reset-dialog" class="dialog">
+    <form method="dialog">
+      <div class="dialog-icon"><svg class="icon"><use href="#icon-redraw"/></svg></div>
+      <h2>开启新一轮好运？</h2><p>将清空全部抽签记录，8 位同学重新参与抽签。</p>
+      <div class="dialog-actions"><button class="button button-secondary" value="cancel">保留记录</button><button class="button button-primary" id="confirm-reset" value="reset">全部重置</button></div>
+    </form>
+  </dialog>
+  <dialog id="share-dialog" class="dialog">
+    <form method="dialog"><h2>把好运分享出去</h2><p>复制下方网址发送给同事。每个浏览器独立保存抽签进度。</p><input id="share-url" type="url" readonly aria-label="网站分享链接"><div class="dialog-actions"><button class="button button-secondary" value="close">关闭</button><button class="button button-primary" id="copy-link-button" type="button"><svg class="icon"><use href="#icon-copy"/></svg>复制链接</button></div></form>
+  </dialog>
+  <noscript><p class="noscript">请开启浏览器 JavaScript，即可开始欢乐VAU抽签。</p></noscript>
+  <script type="module" src="./app.mjs"></script>
+</body>
 </html>
